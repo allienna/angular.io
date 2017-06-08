@@ -8,7 +8,7 @@ import { TwainService } from './twain.service';
   selector: 'twain-quote',
   template: '<p class="twain"><i>{{quote}}</i></p>'
 })
-export class TwainComponent  implements OnInit {
+export class TwainComponent implements OnInit {
   intervalId: number;
   quote = '...';
   constructor(private twainService: TwainService) { }
